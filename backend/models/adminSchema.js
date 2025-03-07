@@ -19,7 +19,8 @@ const adminSchema = new mongoose.Schema({
         default: "Admin"
     },
     schoolName: {
-        type: String, 
+        type: String,
+        unique: true,
         required: true
     }
 });
